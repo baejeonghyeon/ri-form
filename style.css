@@ -22,7 +22,7 @@ body, html{
 }
 
 .img2{
-  background-image: url(./img/riform\ 블렌더\ 1.png);
+  background-image: url(./img/riform\ poster2.png);
 }
 
 .reform-grid{
@@ -73,8 +73,8 @@ body, html{
 .sub-title{
   margin: 0;
   padding: 0;
-  font-size: 2rem;
   font-weight: 400;
+  font-size: 2vw;
 }
 
 .form-link-box{
@@ -92,9 +92,13 @@ body, html{
 
 
 .links{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
   text-decoration: none;
   color: #000;
   padding: 20px;
+  font-size: 3vw;
 }
 
 
@@ -117,7 +121,8 @@ body, html{
 }
 
 .draft-img{
-  width: 260px;
+  /* width: 260px; */
+  width: 80%;
   border-radius: 10%;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
 }
@@ -128,30 +133,44 @@ body, html{
   
 }
 
-@media (max-width: 1000px){
-  .draft-img{
-    width: 87%;
+.accent{
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+@media (max-width: 1350px){
+  .sub-title{
+    font-size: 3.5vw;
   }
 
+  .accent{
+    font-size: 4.5vw;
+  }
 
 }
 
+
+
 @media (max-width: 800px){
-  .sub-title{
+  /* .sub-title{
     font-size: 1.8rem;
+  } */
+
+  .links{
+    font-size: 6.5vw;
   }
 
   .reform-text{
     font-size: 1.3rem;
   }
 
-  .explain-text{
+  /* .explain-text{
     font-size: 1rem;
     margin-bottom: 20px;
-  }
+  } */
 }
 
-@media (max-width: 530px){
+@media (max-width: 1000px){
   .draft-imgs{
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -166,7 +185,11 @@ body, html{
     margin: 35px 0;
   }
 
-  .explain-text{
+  /* .explain-text{
     display: none;
+  } */
+
+  .text-area{
+    min-height: 400px;
   }
 }
